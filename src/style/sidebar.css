@@ -1,0 +1,136 @@
+.SideBar {
+    width: 25%;
+    border: none;
+    border-right: 1px solid #ffbf0034;
+    height: auto;
+}
+
+.SideBarFilterOptions {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
+
+.SideBarFilterOptions>h1 {
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.SideBar {
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+}
+
+.SideBar>p {
+    padding: 12px;
+    border-radius: 50px;
+    border: none;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SideBarOptions {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    align-items: center;
+    border: none;
+    border-bottom: #ffbf0034 1px solid;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.SideBarOptions>p {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* .EmotesType{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.Emotesbutton{
+    padding: 5px;
+    border-radius:5px ;
+    border: none;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+
+}
+#panel {
+    display: none;
+  } */
+.dropbtn {
+    padding: 12px;
+    border-radius: 50px;
+    border: none;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown:hover {
+    margin-bottom: 140px;
+    transition: 0.5s;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: 0.4s;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 5px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+  color: #fff;
+  transition: 0.2s;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    transition: 0.4s;
+
+}

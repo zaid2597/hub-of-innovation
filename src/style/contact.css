@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+.contactPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 50px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    padding: 100px 0;
+}
+
+.Form {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 50px 0px;
+}
+
+.ClientDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.ClientDetails>input {
+    width: 350px;
+    height: 60px;
+    border-radius: 5px;
+    padding: 0px 20px;
+    color: #000;
+}
+
+.ClientDetails>input::placeholder {
+    text-transform: uppercase;
+    font-weight: 800;
+
+}
+
+.ClientDetails>input:focus {
+    outline-color: #FFBF00;
+}
+
+.contactPage>h1 {
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 900;
+
+}
+
+.contactPage>p {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-transform: capitalize;
+}
+
+.MessageArea>textarea {
+    width: 350px;
+    height: 150px;
+    resize: none;
+    border-radius: 5px;
+    padding: 20px;
+    color: #000;
+
+}
+
+.MessageArea>textarea::placeholder {
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.MessageArea>textarea:focus {
+    outline-color: #FFBF00;
+}
+
+.SendMessageBtn {
+    background-image: linear-gradient(to right, #FFBF00 0%, #b48811 51%, #FFBF00 100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: capitalize;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    /* box-shadow: 0 0 20px #eee; */
+    border-radius: 5px;
+    display: block;
+}
+
+.SendMessageBtn:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.hover-underline-animation:hover {
+    color: #F8B901;
+}
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: #F8B901;
+    transform-origin: bottom;
+    transition: transform 0.5s;
+
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom;
+
+}
+
+/* .twitter-share-button {
+    font-size: "50px";
+    margin-right: "45px";
+    cursor: "pointer";
+    padding: "10px";
+    border-radius: "10px",
+}
+
+.behance-share-button {
+    font-size: "50px";
+    margin-right: "45px";
+    cursor: "pointer";
+    padding: "10px";
+    border-radius: "10px",
+} */
+
+.socialLinkButton {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    border-radius: 10px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.socialLinkButton:hover {
+    background-color: #F8B901;
+}

@@ -1,0 +1,53 @@
+.NewArrival {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #141A20;
+    padding: 18px 50px;
+    border-radius: 20px;
+    margin: 50px;
+}
+
+.NewArrival>p {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.NewArrival>button {
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #28313A;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    text-transform: capitalize;
+    border: none;
+    font-size: 16px;
+    transition: 400ms ease-in;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, #FDF467, #ffbf00 50%, #28313A 50%),
+        linear-gradient(to right, #28313A 50%, #FDF467, #ffbf00 50%);
+    background-image: -moz-linear-gradient(to right, #28313A 50%, #FDF467, #ffbf00 50%),
+        linear-gradient(to right, #FDF467, #ffbf00 50%, #28313A 50%);
+    background-image: -webkit-linear-gradient(to right, #FDF467, #ffbf00 50%, #28313A 50%),
+        linear-gradient(to right, #28313A 50%, #FDF467, #ffbf00 50%);
+    transition: background-position left 0.5s linear;
+    -webkit-transition: background-position left 0.5s linear;
+    -moz-transition: background-position left 0.5s linear;
+    -o-transition: background-position left 0.5s linear;
+    -webkit-background-clip: text, border-box;
+    -moz-background-clip: text, border-box;
+    background-clip: text, border-box;
+    color: transparent;
+    -webkit-text-fill-color: rgb(255, 255, 255);
+}
+
+.NewArrival>button:hover {
+    font-weight: 500;
+    background-position: -100% 0;
+    color: #000000;
+    text-decoration: none;
+    transition: all 0.5s cubic-bezier(0.000, 0.000, 0.230, 1);
+    -webkit-text-fill-color: #000000;
+}
