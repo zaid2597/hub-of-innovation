@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import * as style from "@/style/mainContent.css";
 import Sidebar from "./sidebar";
 // import pfpOne from "@/assest/image/pfpOne.jpg"
@@ -42,467 +44,491 @@ import pfp35 from "@/assest/image/pfp's/pfp35.png";
 import pfp36 from "@/assest/image/pfp's/pfp36.png";
 import pfp37 from "@/assest/image/pfp's/pfp37.png";
 
+import "lightgallery/css/lightgallery.css";
+import "lightgallery/css/lg-zoom.css";
+import "lightgallery/css/lg-thumbnail.css";
+
+import lgThumbnail from "lightgallery/plugins/thumbnail";
+import lgZoom from "lightgallery/plugins/zoom";
+
+import LightGallery from "lightgallery/react";
 
 export default function PeopleContent() {
-    return (
-        <>
-            <div style={{ display: "flex", padding: "0 60px" }}>
-                <Sidebar />
-                <div className="MainContent">
-                    <div className="SearchBar">
-                        {/* <i className="fa-solid fa-magnifying-glass"></i> */}
-                        <IoSearchSharp />
-                        <input type="text" placeholder="Search The Creative World At Work" />
-                    </div>
-                    <div className="CardSection">
-                        <div className="Card">
-                            <div className="CardImageContainer">
-                                <Image
-                                    className="img"
-                                    src={pfp1}
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                />
-                            </div>
-                            <p className="hover-underline-animation">The Shaw Prize</p>
-                        </div>
-                        <div className="Card">
-                            <div className="CardImageContainer">
-                                <Image
-                                    className="img"
-                                    src={pfp2}
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                />
-                            </div>
-                            <p className="hover-underline-animation">The Shaw Prize</p>
-                        </div>
-                        <div className="Card">
-                            <div className="CardImageContainer">
-                                <Image
-                                    className="img"
-                                    src={pfp3}
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                />
-                            </div>
-                            <p className="hover-underline-animation">The Shaw Prize</p>
-                        </div>
-                        <div className="Card">
-                            <div className="CardImageContainer">
-                                <Image
-                                    className="img"
-                                    src={pfp4}
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                />
-                            </div>
-                            <p className="hover-underline-animation">The Shaw Prize</p>
-                        </div>
-                        <div className="Card">
-                            <div className="CardImageContainer">
-                                <Image
-                                    className="img"
-                                    src={pfp5}
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                />
-                            </div>
-                            <p className="hover-underline-animation">The Shaw Prize</p>
-                        </div>
-                        <div className="Card">
-                            <div className="CardImageContainer">
-                                <Image
-                                    className="img"
-                                    src={pfp6}
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                />
-                            </div>
-                            <p className="hover-underline-animation">The Shaw Prize</p>
-                        </div>
-                        <div className="Card">
-                            <div className="CardImageContainer">
-                                <Image
-                                    className="img"
-                                    src={pfp7}
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                />
-                            </div>
-                            <p className="hover-underline-animation">The Shaw Prize</p>
-                        </div>
-                        <div className="Card">
-                            <div className="CardImageContainer">
-                                <Image
-                                    className="img"
-                                    src={pfp8}
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                />
-                            </div>
-                            <p className="hover-underline-animation">The Shaw Prize</p>
-                        </div>
-                        <div className="Card">
-                            <div className="CardImageContainer">
-                                <Image
-                                    className="img"
-                                    src={pfp9}
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                />
-                            </div>
-                            <p className="hover-underline-animation">The Shaw Prize</p>
-                        </div>
-                        <div className="Card">
-                            <div className="CardImageContainer">
-                                <Image
-                                    className="img"
-                                    src={pfp10}
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                />
-                            </div>
-                            <p className="hover-underline-animation">The Shaw Prize</p>
-                        </div>
-                        <div className="Card">
-                            <div className="CardImageContainer">
-                                <Image
-                                    className="img"
-                                    src={pfp11}
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                />
-                            </div>
-                            <p className="hover-underline-animation">The Shaw Prize</p>
-                        </div>
-                        <div className="Card">
-                            <div className="CardImageContainer">
-                                <Image
-                                    className="img"
-                                    src={pfp12}
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                />
-                            </div>
-                            <p className="hover-underline-animation">The Shaw Prize</p>
-                        </div>
-                        <div className="Card">
-                            <div className="CardImageContainer">
-                                <Image
-                                    className="img"
-                                    src={pfp13}
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                />
-                            </div>
-                            <p className="hover-underline-animation">The Shaw Prize</p>
-                        </div>
-                        <div className="Card">
-                            <div className="CardImageContainer">
-                                <Image
-                                    className="img"
-                                    src={pfp14}
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                />
-                            </div>
-                            <p className="hover-underline-animation">The Shaw Prize</p>
-                        </div>
-                        <div className="Card">
-                            <div className="CardImageContainer">
-                                <Image
-                                    className="img"
-                                    src={pfp15}
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                />
-                            </div>
-                            <p className="hover-underline-animation">The Shaw Prize</p>
-                        </div>
-                        <div className="Card">
-                            <div className="CardImageContainer">
-                                <Image
-                                    className="img"
-                                    src={pfp16}
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                />
-                            </div>
-                            <p className="hover-underline-animation">The Shaw Prize</p>
-                        </div>
-                        <div className="Card">
-                            <div className="CardImageContainer">
-                                <Image
-                                    className="img"
-                                    src={pfp17}
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                />
-                            </div>
-                            <p className="hover-underline-animation">The Shaw Prize</p>
-                        </div>
-                        <div className="Card">
-                            <div className="CardImageContainer">
-                                <Image
-                                    className="img"
-                                    src={pfp18}
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                />
-                            </div>
-                            <p className="hover-underline-animation">The Shaw Prize</p>
-                        </div>
-                        <div className="Card">
-                            <div className="CardImageContainer">
-                                <Image
-                                    className="img"
-                                    src={pfp19}
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                />
-                            </div>
-                            <p className="hover-underline-animation">The Shaw Prize</p>
-                        </div>
-                        <div className="Card">
-                            <div className="CardImageContainer">
-                                <Image
-                                    className="img"
-                                    src={pfp20}
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                />
-                            </div>
-                            <p className="hover-underline-animation">The Shaw Prize</p>
-                        </div>
-                        <div className="Card">
-                            <div className="CardImageContainer">
-                                <Image
-                                    className="img"
-                                    src={pfp21}
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                />
-                            </div>
-                            <p className="hover-underline-animation">The Shaw Prize</p>
-                        </div>
-                        <div className="Card">
-                            <div className="CardImageContainer">
-                                <Image
-                                    className="img"
-                                    src={pfp22}
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                />
-                            </div>
-                            <p className="hover-underline-animation">The Shaw Prize</p>
-                        </div>
-                        <div className="Card">
-                            <div className="CardImageContainer">
-                                <Image
-                                    className="img"
-                                    src={pfp23}
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                />
-                            </div>
-                            <p className="hover-underline-animation">The Shaw Prize</p>
-                        </div>
-                        <div className="Card">
-                            <div className="CardImageContainer">
-                                <Image
-                                    className="img"
-                                    src={pfp24}
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                />
-                            </div>
-                            <p className="hover-underline-animation">The Shaw Prize</p>
-                        </div>
-                        <div className="Card">
-                            <div className="CardImageContainer">
-                                <Image
-                                    className="img"
-                                    src={pfp25}
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                />
-                            </div>
-                            <p className="hover-underline-animation">The Shaw Prize</p>
-                        </div>
-                        <div className="Card">
-                            <div className="CardImageContainer">
-                                <Image
-                                    className="img"
-                                    src={pfp26}
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                />
-                            </div>
-                            <p className="hover-underline-animation">The Shaw Prize</p>
-                        </div>
-                        <div className="Card">
-                            <div className="CardImageContainer">
-                                <Image
-                                    className="img"
-                                    src={pfp27}
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                />
-                            </div>
-                            <p className="hover-underline-animation">The Shaw Prize</p>
-                        </div>
-                        <div className="Card">
-                            <div className="CardImageContainer">
-                                <Image
-                                    className="img"
-                                    src={pfp28}
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                />
-                            </div>
-                            <p className="hover-underline-animation">The Shaw Prize</p>
-                        </div>
-                        <div className="Card">
-                            <div className="CardImageContainer">
-                                <Image
-                                    className="img"
-                                    src={pfp29}
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                />
-                            </div>
-                            <p className="hover-underline-animation">The Shaw Prize</p>
-                        </div>
-                        <div className="Card">
-                            <div className="CardImageContainer">
-                                <Image
-                                    className="img"
-                                    src={pfp30}
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                />
-                            </div>
-                            <p className="hover-underline-animation">The Shaw Prize</p>
-                        </div>
-                        <div className="Card">
-                            <div className="CardImageContainer">
-                                <Image
-                                    className="img"
-                                    src={pfp31}
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                />
-                            </div>
-                            <p className="hover-underline-animation">The Shaw Prize</p>
-                        </div>
-                        <div className="Card">
-                            <div className="CardImageContainer">
-                                <Image
-                                    className="img"
-                                    src={pfp32}
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                />
-                            </div>
-                            <p className="hover-underline-animation">The Shaw Prize</p>
-                        </div>
-                        <div className="Card">
-                            <div className="CardImageContainer">
-                                <Image
-                                    className="img"
-                                    src={pfp33}
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                />
-                            </div>
-                            <p className="hover-underline-animation">The Shaw Prize</p>
-                        </div>
-                        <div className="Card">
-                            <div className="CardImageContainer">
-                                <Image
-                                    className="img"
-                                    src={pfp34}
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                />
-                            </div>
-                            <p className="hover-underline-animation">The Shaw Prize</p>
-                        </div>
-                        <div className="Card">
-                            <div className="CardImageContainer">
-                                <Image
-                                    className="img"
-                                    src={pfp35}
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                />
-                            </div>
-                            <p className="hover-underline-animation">The Shaw Prize</p>
-                        </div>
-                        <div className="Card">
-                            <div className="CardImageContainer">
-                                <Image
-                                    className="img"
-                                    src={pfp36}
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                />
-                            </div>
-                            <p className="hover-underline-animation">The Shaw Prize</p>
-                        </div>
-                        <div className="Card">
-                            <div className="CardImageContainer">
-                                <Image
-                                    className="img"
-                                    src={pfp37}
-                                    width={0}
-                                    height={0}
-                                    sizes="100vw"
-                                />
-                            </div>
-                            <p className="hover-underline-animation">The Shaw Prize</p>
-                        </div>
-
-                    </div>
-                </div>
+  const [testImageOpen, setTestImageOpen] = useState(false);
+  return (
+    <>
+      <div style={{ display: "flex", padding: "0 60px" }}>
+        <Sidebar />
+        <div className="MainContent">
+          <div className="SearchBar">
+            {/* <i className="fa-solid fa-magnifying-glass"></i> */}
+            <IoSearchSharp />
+            <input
+              type="text"
+              placeholder="Search The Creative World At Work"
+            />
+          </div>
+          <div className="CardSection">
+            <div className="Card">
+              <div className="CardImageContainer">
+                <LightGallery speed={500}>
+                  <a
+                    href="pfp2.png"
+                  > 
+                    <Image alt="img1" src={pfp1} />
+                  </a>
+                </LightGallery>
+              </div>
+              <p className="hover-underline-animation">The Shaw Prize</p>
             </div>
-        </>
-    )
+
+            <div className="Card">
+              <div className="CardImageContainer">
+                <Image
+                  className="img"
+                  src={pfp1}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                />
+              </div>
+              <p className="hover-underline-animation">The Shaw Prize</p>
+            </div>
+            <div className="Card">
+              <div className="CardImageContainer">
+                <Image
+                  className="img"
+                  src={pfp2}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                />
+              </div>
+              <p className="hover-underline-animation">The Shaw Prize</p>
+            </div>
+            <div className="Card">
+              <div className="CardImageContainer">
+                <Image
+                  className="img"
+                  src={pfp3}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                />
+              </div>
+              <p className="hover-underline-animation">The Shaw Prize</p>
+            </div>
+            <div className="Card">
+              <div className="CardImageContainer">
+                <Image
+                  className="img"
+                  src={pfp4}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                />
+              </div>
+              <p className="hover-underline-animation">The Shaw Prize</p>
+            </div>
+            <div className="Card">
+              <div className="CardImageContainer">
+                <Image
+                  className="img"
+                  src={pfp5}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                />
+              </div>
+              <p className="hover-underline-animation">The Shaw Prize</p>
+            </div>
+            <div className="Card">
+              <div className="CardImageContainer">
+                <Image
+                  className="img"
+                  src={pfp6}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                />
+              </div>
+              <p className="hover-underline-animation">The Shaw Prize</p>
+            </div>
+            <div className="Card">
+              <div className="CardImageContainer">
+                <Image
+                  className="img"
+                  src={pfp7}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                />
+              </div>
+              <p className="hover-underline-animation">The Shaw Prize</p>
+            </div>
+            <div className="Card">
+              <div className="CardImageContainer">
+                <Image
+                  className="img"
+                  src={pfp8}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                />
+              </div>
+              <p className="hover-underline-animation">The Shaw Prize</p>
+            </div>
+            <div className="Card">
+              <div className="CardImageContainer">
+                <Image
+                  className="img"
+                  src={pfp9}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                />
+              </div>
+              <p className="hover-underline-animation">The Shaw Prize</p>
+            </div>
+            <div className="Card">
+              <div className="CardImageContainer">
+                <Image
+                  className="img"
+                  src={pfp10}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                />
+              </div>
+              <p className="hover-underline-animation">The Shaw Prize</p>
+            </div>
+            <div className="Card">
+              <div className="CardImageContainer">
+                <Image
+                  className="img"
+                  src={pfp11}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                />
+              </div>
+              <p className="hover-underline-animation">The Shaw Prize</p>
+            </div>
+            <div className="Card">
+              <div className="CardImageContainer">
+                <Image
+                  className="img"
+                  src={pfp12}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                />
+              </div>
+              <p className="hover-underline-animation">The Shaw Prize</p>
+            </div>
+            <div className="Card">
+              <div className="CardImageContainer">
+                <Image
+                  className="img"
+                  src={pfp13}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                />
+              </div>
+              <p className="hover-underline-animation">The Shaw Prize</p>
+            </div>
+            <div className="Card">
+              <div className="CardImageContainer">
+                <Image
+                  className="img"
+                  src={pfp14}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                />
+              </div>
+              <p className="hover-underline-animation">The Shaw Prize</p>
+            </div>
+            <div className="Card">
+              <div className="CardImageContainer">
+                <Image
+                  className="img"
+                  src={pfp15}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                />
+              </div>
+              <p className="hover-underline-animation">The Shaw Prize</p>
+            </div>
+            <div className="Card">
+              <div className="CardImageContainer">
+                <Image
+                  className="img"
+                  src={pfp16}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                />
+              </div>
+              <p className="hover-underline-animation">The Shaw Prize</p>
+            </div>
+            <div className="Card">
+              <div className="CardImageContainer">
+                <Image
+                  className="img"
+                  src={pfp17}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                />
+              </div>
+              <p className="hover-underline-animation">The Shaw Prize</p>
+            </div>
+            <div className="Card">
+              <div className="CardImageContainer">
+                <Image
+                  className="img"
+                  src={pfp18}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                />
+              </div>
+              <p className="hover-underline-animation">The Shaw Prize</p>
+            </div>
+            <div className="Card">
+              <div className="CardImageContainer">
+                <Image
+                  className="img"
+                  src={pfp19}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                />
+              </div>
+              <p className="hover-underline-animation">The Shaw Prize</p>
+            </div>
+            <div className="Card">
+              <div className="CardImageContainer">
+                <Image
+                  className="img"
+                  src={pfp20}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                />
+              </div>
+              <p className="hover-underline-animation">The Shaw Prize</p>
+            </div>
+            <div className="Card">
+              <div className="CardImageContainer">
+                <Image
+                  className="img"
+                  src={pfp21}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                />
+              </div>
+              <p className="hover-underline-animation">The Shaw Prize</p>
+            </div>
+            <div className="Card">
+              <div className="CardImageContainer">
+                <Image
+                  className="img"
+                  src={pfp22}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                />
+              </div>
+              <p className="hover-underline-animation">The Shaw Prize</p>
+            </div>
+            <div className="Card">
+              <div className="CardImageContainer">
+                <Image
+                  className="img"
+                  src={pfp23}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                />
+              </div>
+              <p className="hover-underline-animation">The Shaw Prize</p>
+            </div>
+            <div className="Card">
+              <div className="CardImageContainer">
+                <Image
+                  className="img"
+                  src={pfp24}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                />
+              </div>
+              <p className="hover-underline-animation">The Shaw Prize</p>
+            </div>
+            <div className="Card">
+              <div className="CardImageContainer">
+                <Image
+                  className="img"
+                  src={pfp25}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                />
+              </div>
+              <p className="hover-underline-animation">The Shaw Prize</p>
+            </div>
+            <div className="Card">
+              <div className="CardImageContainer">
+                <Image
+                  className="img"
+                  src={pfp26}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                />
+              </div>
+              <p className="hover-underline-animation">The Shaw Prize</p>
+            </div>
+            <div className="Card">
+              <div className="CardImageContainer">
+                <Image
+                  className="img"
+                  src={pfp27}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                />
+              </div>
+              <p className="hover-underline-animation">The Shaw Prize</p>
+            </div>
+            <div className="Card">
+              <div className="CardImageContainer">
+                <Image
+                  className="img"
+                  src={pfp28}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                />
+              </div>
+              <p className="hover-underline-animation">The Shaw Prize</p>
+            </div>
+            <div className="Card">
+              <div className="CardImageContainer">
+                <Image
+                  className="img"
+                  src={pfp29}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                />
+              </div>
+              <p className="hover-underline-animation">The Shaw Prize</p>
+            </div>
+            <div className="Card">
+              <div className="CardImageContainer">
+                <Image
+                  className="img"
+                  src={pfp30}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                />
+              </div>
+              <p className="hover-underline-animation">The Shaw Prize</p>
+            </div>
+            <div className="Card">
+              <div className="CardImageContainer">
+                <Image
+                  className="img"
+                  src={pfp31}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                />
+              </div>
+              <p className="hover-underline-animation">The Shaw Prize</p>
+            </div>
+            <div className="Card">
+              <div className="CardImageContainer">
+                <Image
+                  className="img"
+                  src={pfp32}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                />
+              </div>
+              <p className="hover-underline-animation">The Shaw Prize</p>
+            </div>
+            <div className="Card">
+              <div className="CardImageContainer">
+                <Image
+                  className="img"
+                  src={pfp33}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                />
+              </div>
+              <p className="hover-underline-animation">The Shaw Prize</p>
+            </div>
+            <div className="Card">
+              <div className="CardImageContainer">
+                <Image
+                  className="img"
+                  src={pfp34}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                />
+              </div>
+              <p className="hover-underline-animation">The Shaw Prize</p>
+            </div>
+            <div className="Card">
+              <div className="CardImageContainer">
+                <Image
+                  className="img"
+                  src={pfp35}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                />
+              </div>
+              <p className="hover-underline-animation">The Shaw Prize</p>
+            </div>
+            <div className="Card">
+              <div className="CardImageContainer">
+                <Image
+                  className="img"
+                  src={pfp36}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                />
+              </div>
+              <p className="hover-underline-animation">The Shaw Prize</p>
+            </div>
+            <div className="Card">
+              <div className="CardImageContainer">
+                <Image
+                  className="img"
+                  src={pfp37}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                />
+              </div>
+              <p className="hover-underline-animation">The Shaw Prize</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
